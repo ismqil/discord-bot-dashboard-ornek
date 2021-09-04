@@ -93,10 +93,7 @@ app.post('/panel/:guildID', async function(req, res){
       res.render("ayar", {user: req.user, perms: Permissions, client: client, guild, alert: "Ayarlarınız başarıyla kaydedildi!", db})  }}}
   } else { res.redirect("/giris") }
 });
-const listener = app.listen(3000, (err) => {
-    if (err) throw err;
-    console.log("site başladı")
-})
+app.listen(process.env.PORT || 5000)
 client.on('messageCreate', message => {
   if (message.content.startsWith("+" + "yardım")) {
     message.reply(message.guild.roles.cache.find(r => r.id === "869250081424031806").name);
