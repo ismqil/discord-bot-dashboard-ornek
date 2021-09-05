@@ -22,7 +22,7 @@ passport.serializeUser((user, done) => {
 let strategy = new Strategy({
   clientID: "855397112815943721",
   clientSecret: "n_KQQIXWWocSV0ftfHy1canYFj0iSVI2",
-  callbackURL: "http://localhost:3000/callback",
+  callbackURL: "https://fierce-mesa-59533.herokuapp.com/callback",
   scope: ["identify", "guilds"]
 }, (accesToken, refreshToken, profile, done) => {
   process.nextTick( () => done(null, profile))
