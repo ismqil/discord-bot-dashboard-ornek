@@ -5,7 +5,7 @@ index.js kısmında bir çok yeri güncellemeniz gerekiyor. Aksi takdirde panel 
 ## Hazırdan Konduğum Şeyler 
 [Bootstrap](https://getbootstrap.com)
 
-[SweetAlert](https://sweetalert.gitbook.io)
+[SweetAlert](https://sweetalert2.gitbook.io)
 ## İletişim 
 [İnstagram](https://instagram.com/ism4ilaydinlik)
 
